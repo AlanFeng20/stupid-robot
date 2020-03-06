@@ -1,84 +1,108 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Alan Feng">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stupid robot</title>
     <style>
-        *{
+        * {
             box-sizing: border-box;
         }
-        .con{
+
+        @media screen and (max-width: 768px) {
+            .con {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                flex-flow: column nowrap;
+                justify-content: space-around;
+                margin: 0 auto;
+                max-width: 800px;
+                max-height: 1200px;
+                box-shadow: 0 2px 3px 6px rgba(0, 0, 0, 0.1);
+            }
+        };
+        .con {
             display: flex;
             align-items: center;
             flex-flow: column nowrap;
             justify-content: space-around;
-            @media screen and (max-width: 768px;) {
-                width:100vw;
-                height:100vh;
-            };
             margin: 0 auto;
-            width:60vw;
+            width: 60vw;
             height: 80vh;
             max-width: 800px;
             max-height: 1200px;
             box-shadow: 0 2px 3px 6px rgba(0, 0, 0, 0.1);
             margin-top: 8vh;
         }
-        .con>*{
+
+        .con>* {
             width: 92%;
         }
-        #root{
-            flex:1;
+
+        #root {
+            flex: 1;
             display: flex;
             justify-content: flex-start;
             flex-flow: column nowrap;
-            overflow-y: auto; 
+            overflow-y: auto;
             margin: 8px;
             padding: 8px;
         }
-        #root::-webkit-scrollbar{
+
+        #root::-webkit-scrollbar {
             display: inline-block;
             width: 10px;
         }
-        #root::-webkit-scrollbar-thumb{
+
+        #root::-webkit-scrollbar-thumb {
             background-color: lightskyblue;
             border-radius: 16px;
         }
-        .input{
+
+        .input {
             display: flex;
             justify-content: space-around;
             align-items: center;
             padding: 24px 8px;
         }
-        .input>*{
+
+        .input>* {
             height: 30px;
         }
-        .input>input{
-            flex:1;
+
+        .input>input {
+            flex: 1;
             margin: 0 16px;
         }
-        .input>button{
+
+        .input>button {
             width: 60px;
         }
-        #root>*{
+
+        #root>* {
             width: 75%;
             max-width: 150px;
             margin: 8px;
             padding: 8px;
             border-radius: 16px;
         }
-        .m{
+
+        .m {
             background: lightgoldenrodyellow;
-            align-self: flex-start;
-        }
-        .r{
-            background: lightblue;
             align-self: flex-end;
+        }
+
+        .r {
+            background: lightblue;
+            align-self: flex-start;
         }
     </style>
 </head>
+
 <body>
     <div class="con">
         <div id="root"></div>
@@ -88,4 +112,5 @@
     </div>
     <script src="./index.js"></script>
 </body>
+
 </html>
