@@ -1,6 +1,5 @@
 /*
  *   Copyright (c) 2020 Alan Feng
-    https://github.com/AlanFeng20
  *   All rights reserved.
 
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
